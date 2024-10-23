@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Challenges & Support Our App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #0070ba;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #eee;
+    }
+    .progress-bar-value {
+      height: 20px;
+      background-color: #0070ba;
+      width: 50%; /* Example value */
+    }
+    .challenge, .donation-section {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .button {
+      padding: 10px;
+      background-color: #0070ba;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+    }
+    .button.patreon {
+      background-color: #FF424D;
+    }
+    .input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .text-center {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Daily Challenges Section -->
+    <h1>Daily Challenges</h1>
+
+    <div class="progress">
+      <h2>Your Progress</h2>
+      <div class="progress-bar">
+        <div class="progress-bar-value"></div>
+      </div>
+      <p>2/3 challenges completed</p>
+    </div>
+
+    <div class="challenge">
+      <div>
+        <h3>Read Surah Al-Kahf</h3>
+        <p>50 points</p>
+      </div>
+      <button class="button">Complete</button>
+    </div>
+
+    <div class="challenge">
+      <div>
+        <h3>Learn a new dua</h3>
+        <p>30 points</p>
+      </div>
+      <button class="button">Complete</button>
+    </div>
+
+    <div class="challenge">
+      <div>
+        <h3>Perform a charitable act</h3>
+        <p>40 points</p>
+      </div>
+      <button class="button">Complete</button>
+    </div>
+
+    <p>Total Points: 120</p>
+
+    <!-- Donation Section -->
+    <h1>Support Our App</h1>
+    <div class="donation-section">
+      <p>Your support helps us continue to provide free Islamic education and spiritual growth resources. Choose a method below to contribute:</p>
+    </div>
+    
+    <button class="button">Donate with PayPal</button>
+    <button class="button patreon">Become a Patron</button>
+    
+    <div class="donation-section">
+      <h2>One-time Donation</h2>
+      <label for="amount">Amount (USD)</label>
+      <input type="number" id="amount" class="input" placeholder="Enter amount">
+      <button class="button">
+        Donate Now
+      </button>
+    </div>
+
+    <p class="text-center">May Allah reward you for your generosity.</p>
+  </div>
+
+</body>
+</html>
